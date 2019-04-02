@@ -1,0 +1,68 @@
+{#
+
+This is the TWIG template for a Creature Stat Block in the Numenera Setting
+
+TWIG Documentation can be found here:
+https://twig.symfony.com/doc/2.x/
+
+#}
+
+<div>
+	<h1>{{ variables.name }}</h1>
+	{% if variables.name is defined %}
+		<dt>Name</dt>
+		<dd> {{ variables.name}} </dd>
+	{% endif %}
+	{% if variables.level is defined %}
+		<dt>Level</dt>
+		<dd> {{ variables.level}} </dd>
+	{% endif %}
+	{% if variables.description is not empty %}
+		<dt>Description</dt>
+		<dd> {{ variables.description}} </dd>
+	{% endif %}
+	{% if variables.motive is not empty %}
+		<dt>Motive</dt>
+		<dd> {{ variables.motive}} </dd>
+	{% endif %}
+	{% if variables.environment is not empty %}
+		<dt>Environment</dt>
+		<dd> {{ variables.environment}} </dd>
+	{% endif %}
+	{% if variables.health is defined %}
+		<dt>Health</dt>
+		<dd> {{ variables.health}} </dd>
+	{% endif %}
+	{% if variables.damage_inflicted is defined %}
+		<dt>Damage Inflicted</dt>
+		<dd> {{ variables.damage_inflicted}} </dd>
+	{% endif %}
+	{% if variables.armor is defined %}
+		<dt>Armor</dt>
+		<dd> {{ variables.armor}} </dd>
+	{% endif %}
+	{% if variables.movement is not empty %}
+		<dt>Movement</dt>
+		<dd> {{ variables.movement}} </dd>
+	{% endif %}
+	{% if variables.modifications is defined %}
+		<dt>Modifications</dt>
+		<dd> {{ variables.modifications}} </dd>
+	{% endif %}
+	{% if variables.combat is defined %}
+		<dt>Combat</dt>
+		<dd> {{ variables.combat}} </dd>
+	{% endif %}
+	{% if variables.use is defined %}
+		<dt>Use</dt>
+		<dd> {{ variables.use}} </dd>
+	{% endif %}
+	{% if variables.loot is not empty %}
+		<dt>Loot</dt>
+		<dd> {{ variables.loot}} </dd>
+	{% endif %}
+	{% if variables.gm_intrusion is defined %}
+		<dt>GM Intrusion</dt>
+		<dd> {{ variables.gm_intrusion}} </dd>
+	{% endif %}
+</div>
