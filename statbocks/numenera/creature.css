@@ -1,0 +1,37 @@
+
+/*
+Managing the layout of the statblock so that some values are on the same
+line as the line with it's description.
+
+From https://stackoverflow.com/questions/1713048/how-to-style-dt-and-dd-so-they-are-on-the-same-line
+
+alternative: https://stackoverflow.com/questions/16085910/can-i-render-a-dt-on-the-same-line-as-its-dd
+
+*/
+dl {
+  width: 100%;
+  overflow: hidden;
+  /* background: #ff0; */
+  padding: 0;
+  margin: 0
+}
+dt {
+  color: black;
+  font-weight: bold;
+  /* float: left;
+  width: 50%; */
+  /* adjust the width; make sure the total of both is 100% */
+  /* background: #cc0; */
+  /* padding: 0;
+  margin: 0; */
+  text-decoration: underline;
+}
+dd {
+  color: black;
+  /* float: left;
+  width: 50%; */
+  /* adjust the width; make sure the total of both is 100% */
+  /* background: #dd0 */
+  /* padding: 0;
+  margin: 0 */
+}
